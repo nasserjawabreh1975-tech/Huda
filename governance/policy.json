@@ -1,0 +1,7 @@
+{
+ "safe_mode": true,
+ "execution": true,
+ "telemetry": true,
+ "human_approval": true,
+ "runtime_guard": true
+}

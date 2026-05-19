@@ -1,37 +1,27 @@
 {
-  "name": "huda-nuclear-ai",
+  "name": "huda-platform",
   "version": "1.0.0",
-  "description": "HUDA Nuclear Autonomous Engineering Platform",
+  "description": "HUDA AI PLATFORM",
   "main": "main.js",
-  "author": "HUDA",
+  "author": "nasserjawabreh1975-tech",
+  "license": "MIT",
   "scripts": {
-    "start": "npx electron .",
-    "build-linux": "npx electron-builder --linux",
-    "build-win": "npx electron-builder --win"
-  },
-  "build": {
-    "appId": "com.huda.nuclear.ai",
-    "productName": "HUDA Nuclear AI",
-    "directories": {
-      "output": "dist"
-    },
-    "linux": {
-      "target": [
-        "AppImage"
-      ],
-      "category": "Development"
-    },
-    "win": {
-      "target": [
-        "nsis"
-      ]
-    }
+    "start": "electron .",
+    "build-linux": "electron-builder --linux",
+    "build-win": "electron-builder --win"
   },
   "devDependencies": {
-    "electron": "^28.3.3",
-    "electron-builder": "^24.13.3"
+    "electron": "^30.0.0",
+    "electron-builder": "^26.0.12"
   },
-  "dependencies": {
-    "debug": "^4.4.3"
+  "build": {
+    "appId": "com.huda.platform",
+    "productName": "HUDA",
+    "linux": {
+      "target": "AppImage"
+    },
+    "win": {
+      "target": "nsis"
+    }
   }
 }

@@ -1,16 +1,13 @@
 const { app, BrowserWindow } = require('electron')
 
-function createWindow(){
+function createWindow() {
 
-const win = new BrowserWindow({
-width:1400,
-height:900
-})
+  const win = new BrowserWindow({
+    width: 1600,
+    height: 1000
+  })
 
-win.loadFile('index.html')
-
+  win.loadURL('http://localhost:8090')
 }
 
-app.whenReady().then(() => {
-createWindow()
-})
+app.whenReady().then(createWindow)
