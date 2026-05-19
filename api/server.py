@@ -1,15 +1,10 @@
-from fastapi import FastAPI
-import subprocess
+from http.server import HTTPServer, SimpleHTTPRequestHandler
+import os
 
-app = FastAPI()
+os.chdir("../ui")
 
-@app.get("/")
-def root():
-    return {"HUDA":"ONLINE"}
+server = HTTPServer(("0.0.0.0", 8090), SimpleHTTPRequestHandler)
 
-@app.post("/execute")
-def execute(cmd:str):
+print("HUDA UI ONLINE : http://0.0.0.0:8090")
 
-    result=subprocess.getoutput(cmd)
-
-    return {"output":result}
+server.serve_forever()

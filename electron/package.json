@@ -1,29 +1,10 @@
 {
- "name":"huda-platform",
- "version":"1.0.0",
- "description":"HUDA Autonomous Runtime",
- "main":"main.js",
- "author":"Nasser",
- "scripts":{
-   "start":"electron .",
-   "build-linux":"electron-builder --linux",
-   "build-win":"electron-builder --win"
- },
- "devDependencies":{
-   "electron":"latest",
-   "electron-builder":"latest"
- },
- "build":{
-   "appId":"huda.runtime.platform",
-   "productName":"HUDA",
-   "directories":{
-     "output":"dist"
-   },
-   "linux":{
-     "target":["AppImage"]
-   },
-   "win":{
-     "target":["nsis"]
-   }
- }
+  "name": "huda-platform",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build-win": "electron-builder --win",
+    "build-linux": "electron-builder --linux"
+  }
 }
