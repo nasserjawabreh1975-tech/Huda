@@ -1,0 +1,8 @@
+{
+ "execution": true,
+ "memory": true,
+ "telemetry": true,
+ "watchdog": true,
+ "human_approval": true,
+ "safe_mode": true
+}

@@ -7,7 +7,7 @@ width:1400,
 height:900
 })
 
-win.loadFile("../frontend/index.html")
+win.loadFile("../ui/index.html")
 }
 
 app.whenReady().then(createWindow)
