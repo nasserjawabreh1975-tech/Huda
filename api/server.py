@@ -10,6 +10,6 @@ def root():
 @app.post("/execute")
 def execute(cmd:str):
 
-    result = subprocess.getoutput(cmd)
+    result=subprocess.getoutput(cmd)
 
     return {"output":result}

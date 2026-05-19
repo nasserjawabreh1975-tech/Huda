@@ -4,9 +4,11 @@ print("[EXECUTION ENGINE ONLINE]")
 
 while True:
 
-    cmd = input("HUDA> ")
+    cmd=input("HUDA> ")
 
-    if cmd == "exit":
+    if cmd=="exit":
         break
 
-    subprocess.run(cmd,shell=True)
+    result=subprocess.getoutput(cmd)
+
+    print(result)

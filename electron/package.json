@@ -1,7 +1,9 @@
 {
  "name":"huda-platform",
  "version":"1.0.0",
+ "description":"HUDA Autonomous Runtime",
  "main":"main.js",
+ "author":"Nasser",
  "scripts":{
    "start":"electron .",
    "build-linux":"electron-builder --linux",
